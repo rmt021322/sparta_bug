@@ -13,6 +13,7 @@ for test_case in range(1, T + 1):
         total_list = total_list + [personal_score] #리스트에 값 추가
         #print(total_list)
 
+
     # 성적을 내림차순으로 정렬하고, K번 학생의 성적 순위를 찾기
     #성적-평점 잇기
     #1. 총점리스트 줄세우기
@@ -62,6 +63,5 @@ for test_case in range(1, T + 1):
         else : #0.9n이면 D0
             final_rank = score_list[9]  # D0
 
-            print(f'#{test_case} {final_rank}') #1#2#2#3#3#3 ...
+        print(f'#{test_case} {final_rank}') #1 A+ #1 A0 #1 B+ ....
     
-

@@ -40,29 +40,27 @@ for rank in range(1, N+1):
          #2.n이면 a-
         elif 2<=rank/10 < 3:
             final_rank = score_list[2]
-         #3.n이면 a0
+         #3.n이면 B+
         elif 3<=rank/10 < 4:
             final_rank = score_list[3]
-         #4.n이면 a0
+         #4.n이면 B0
         elif 4<=rank/10 < 5:
             final_rank = score_list[4]
-         #5.n이면 a0
+         #5.n이면 B-
         elif 5<=rank/10 < 6:
             final_rank = score_list[5]
-         #6.n이면 a0
+         #6.n이면 C+
         elif 6<=rank/10 < 7:
             final_rank = score_list[6]
-         #7.n이면 a0
+         #7.n이면 C0
         elif 7<=rank/10 < 8:
             final_rank = score_list[7]
-         #8.n이면 a0
+         #8.n이면 C-
         elif 8<=rank/10 < 9:
             final_rank = score_list[8]
-        #9.n이면 a0
-        elif 9<=rank/10 :
-            final_rank = score_list[9]
+        #9.n이면 D0
         else :
-            break
+            final_rank = score_list[9]
 
 
 print(f'#{test_case} {final_rank}')

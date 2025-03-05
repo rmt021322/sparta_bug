@@ -63,5 +63,5 @@ for test_case in range(1, T + 1):
         else : #0.9n이면 D0
             final_rank = score_list[9]  # D0
 
-        print(f'#{test_case} {final_rank}') #1 A+ #1 A0 #1 B+ ....
+            print(f'#{test_case} {final_rank}') #1#2#2#3#3#3...
     

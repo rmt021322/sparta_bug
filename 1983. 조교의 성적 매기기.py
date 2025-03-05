@@ -15,4 +15,4 @@ for test_case in range(1, T + 1):
        # print(personal_score)
         total_list = total_list + [personal_score] #총점 리스트에 백분율값 추가
         
-    
+    #성적-평점 잇기

@@ -1,3 +1,6 @@
+#총점 내림차순에서 k의 점수 찾기 :k점수 == 총점
+#백분율 10% 비율마다 같은 평점
+
 T = int(input())  # 테스트 케이스 개수
 for test_case in range(1, T + 1):
     N, K = map(int, input().split()) #학생수 N, 학생 번호 K
@@ -15,7 +18,7 @@ for test_case in range(1, T + 1):
         
         #k번째 학생 점수 찾기
         k_score = total_list[K - 1]  # K번 학생의 총점
-        print(k_score) #하나 나와야 함
+        #print(k_score) #하나 나와야 함
         
         
     # 성적을 내림차순으로 정렬

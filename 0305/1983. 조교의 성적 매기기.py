@@ -1,6 +1,3 @@
-#총점 내림차순에서 k의 점수 찾기 :k점수 == 총점
-#백분율 10% 비율마다 같은 평점
-
 T = int(input())  # 테스트 케이스 개수
 for test_case in range(1, T + 1):
     N, K = map(int, input().split()) #학생수 N, 학생 번호 K
@@ -20,14 +17,14 @@ for test_case in range(1, T + 1):
     #k번째 학생 점수 찾기
     k_score = total_list[K - 1]  # K번 학생의 총점 k_score는 total_list K-1위치
     #찾을 점수 k_score 인덱스 K-1
-    #print(k_score) #정렬 전 찾아놓기
+    #print(k_score) #하나 나와야 함
      
 
     # 성적을 내림차순으로 정렬
     #성적-평점 잇기
     #1. 총점리스트 줄세우기
     #버블정렬 내림차순
-    for i in range(1, N):
+    for i in range(N):
         for j in range(N - 1 - i):
             if total_list[j] < total_list[j + 1]:  # 앞의 값이 작으면
                 total_list[j], total_list[j + 1] = total_list[j + 1], total_list[j]  # 위치 교환
@@ -42,6 +39,7 @@ for test_case in range(1, T + 1):
 
     print(f'#{test_case} {grade}')
    
+
     '''
     #내꺼만들기#
     
@@ -49,11 +47,10 @@ for test_case in range(1, T + 1):
     : total_list = total_list + [personal_score] 축약코드
     
      #k번째가 정렬후 리스트에서 몇번째인지 찾기
-    rank = total_list.index(k_score)
-    #print(rank) 
+    k_rank = total_list.index(k_score) 
+    
 
-    #평점결정방법
+    #평점결정방법 : 상->하위 10%인원마다 동일한 평점
     grade = score_list[k_rank // (N // 10)]  # 10분위로 나누어 평점 결정
-    
-    
+
     '''

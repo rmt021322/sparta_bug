@@ -19,7 +19,6 @@ for test_case in range(1, T + 1):
         Ai, Bj = Ai, Bj #아니면 그대로
         #굳이 돌릴 필요 X
 
-    #Ai 길이 맞춰서 새 배열 만들기
   
 '''
 

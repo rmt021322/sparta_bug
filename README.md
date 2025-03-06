@@ -1,7 +1,8 @@
 # sparta_bug
 
-#문제 : 풀이 시간
+
 출제 날짜
+(문제 번호 : 풀이 시간)
 <details>
 <summary>
   0305

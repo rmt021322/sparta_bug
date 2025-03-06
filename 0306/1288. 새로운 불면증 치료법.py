@@ -20,4 +20,4 @@ for test_case in range(1, T + 1):
                 #그 숫자가 리스트 sleep_number에 없으면
                 sleep_number += [int(num)] #리스트에 값 추가
 
-    print(f'#{test_case} {count}') 
+    print(f'#{test_case} {sheep_number}') 

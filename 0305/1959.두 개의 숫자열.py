@@ -43,6 +43,12 @@ for test_case in range(1, T + 1):
     내꺼만들기
     float('-inf') #음의 무한대
     0보다 활용성 좋음
-    
+
+
+    위치 변경할때
+     if len(Ai) < len(Bj)  : #Ai가 Bj보다 작으면
+        Ai, Bj = Bj, Ai #위치 변경
+        N, M = M, N #숫자열 길이 위치 변경
+        이렇게만 해도 됨
     
 '''

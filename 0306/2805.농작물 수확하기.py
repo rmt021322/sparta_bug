@@ -11,7 +11,19 @@ for test_case in range(1, T + 1):
     start = [middle,middle] #시작점 중앙값
     sum = 0 #총합 초깃값
     #위아래 한층씩 갈수록 행 좌우 N-1칸씩?
-    
+
+    #중앙줄부터 위로 합
+    #중앙줄부터 아래 합
+    #중앙줄 합 한번 빼기 _ 중복값
     #for i in range(N):
     
-    #마름모에 해당하는 범위값 총합 구하기
+    #마름모에 해당하는 범위값 총합 출력
+
+
+
+
+
+'''
+내꺼만들기
+https://www.acmicpc.net/workbook/view/20
+'''

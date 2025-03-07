@@ -27,7 +27,7 @@ for test_case in range(1, T + 1):
         for c in range(N): #세로 이동 횟수
             if abs(r-middle) + abs(c-middle) <= middle: #가로값 세로값 절댓값 합이 middle보다 작으면
                 #어디서 출발하든 목표지점은 가운데라 그 초과 미만으로는 갈 필요가 없다 배열 반절만 가자
-                sum_crops += field[r][c] #누적합
+                sum_crops += arr[r][c] #누적합
 
 print(f'#{test_case} {sum_crops}') 
 

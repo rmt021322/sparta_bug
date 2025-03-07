@@ -3,7 +3,7 @@ T = int(input())
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 N = int(input()) #농장 크기
 for test_case in range(1, T + 1):
-    arr = [list(map(int, input().split())) for j in range(N)] #농장의 농작물 가치
+    arr = [list(map(int, input())) for j in range(N)] #농장의 농작물 가치
     
     #마름모 만들기
     #정중앙점 기준으로 행 N칸에서 시작해서

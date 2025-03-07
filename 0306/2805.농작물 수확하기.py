@@ -35,6 +35,17 @@ print(f'#{test_case} {sum_crops}')
 내꺼만들기
 https://www.acmicpc.net/workbook/view/20
 좌표설정은 ☆(n,m)☆
+2차원배열 [list(map(int, input().split())) for j in range(N)]
+input()값 split해서 낱개로 저장하고 int로 바꾸고 map으로 저장했다가 list로 표현하는데
+낱개로 저장하고
+낱개
+split은 나눌때만 쓰면 된다
+...
+ㅜ
+
+
+
+
 강사님 풀이
 농장배열 이차원배열 N*N 배열에서
 기준잡는 정중앙 좌표값 middle이니까

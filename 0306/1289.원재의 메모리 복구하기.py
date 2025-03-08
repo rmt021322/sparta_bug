@@ -13,7 +13,7 @@ for test_case in range(1, T + 1):
         if memory[i] != status[i] :#원래값과 초기상태가 다르면
             for j in range(i,N): #i번째부터 N값까지
                 count+=1 # 변환 횟수 증가하고
-                if memory[i] = 1: #원래값이 1이면
+                if memory[i] == 1: #원래값이 1이면
                     status[j] = 1 #초기값도 1
                 else:#원래값 0이면
                     status[i] = 0 #초기값도 0

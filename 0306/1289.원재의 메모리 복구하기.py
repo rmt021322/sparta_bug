@@ -12,11 +12,11 @@ for test_case in range(1, T + 1):
     for i in range(N):
         if memory[i] != status[i] :#원래값과 초기상태가 다르면
             for j in range(i,N): #I부터 끝까지
-            status[i] = memory[i] #변경할 memory값으로 바뀌고
-            count+=1 #변경횟수도 증가하고
+                status[i] = memory[i] #변경할 memory값으로 바뀌고
+                count+=1 #변경횟수도 증가하고
             
                         
-        print(f'#{test_case} {count}')
+    print(f'#{test_case} {count}')
 
 
 

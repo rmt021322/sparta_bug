@@ -2,7 +2,7 @@
 T = int(input())
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
-    memory = list(map(int, input().split()))#메모리 원래 값
+    memory = list(map(int, input()))#메모리 원래 값
     count = 0 #초기상태(모든bit 0)부터 원래 값까지 수정 횟수 
     status = [0]*len(memory) #초기 상태  
     N = len(memory)
@@ -25,7 +25,7 @@ for test_case in range(1, T + 1):
 T = int(input())
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
-    memory = list(map(int, input().split()))#메모리 원래 값
+    memory = list(map(int, input()))#메모리 원래 값
     count = 0 #초기상태(모든bit 0)부터 원래 값까지 수정 횟수 
     status = [0]*len(memory) #초기 상태  
     N = len(memory)
@@ -50,7 +50,7 @@ for test_case in range(1, T + 1):
 T = int(input())
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
-    memory = list(map(int, input().split()))#메모리 원래 값
+    memory = list(map(int, input()))#메모리 원래 값
     count = 0 #초기상태(모든bit 0)부터 원래 값까지 수정 횟수 
     status = [0]*len(memory) #초기 상태  
     N = len(memory)

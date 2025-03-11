@@ -20,7 +20,7 @@ for test_case in range(1,T+1):
         # arr(i,j) 위치에서
         for j in number:
             row_set.add(arr[i][j])
-            col_set.add(arr[i][j])
+            col_set.add(arr[i][j]) 
 
         if len(row_set) != N or len(col_set) != N:  # 길이가 N이 아니면
             answer = 0  # 잘 되어있지 않으면 0 출력

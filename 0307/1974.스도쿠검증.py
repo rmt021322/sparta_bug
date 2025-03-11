@@ -1,16 +1,18 @@
 import sys
+
 sys.stdin = open("input.txt", "r")
 
+T = int(input())  # 테스트케이스
 
-T = int(input()) #테스트케이스
+for test_case in range(1, T + 1):
+    arr = [list(map(int, input().split())) for i in range(9)]
+    # print(arr)
+    N = 9
+    # print(N)
 
-for test_case in range(1,T+1):
-    arr = [list(map(int,input().split())) for i in range(9)]
-    print(arr)
-    N = len(arr)
-    print(N)
+    answer = 1  # 기본적으로 겹치는 숫자가 없다고 생각
 
-    #number = [1,2,3,4,5,6,7,8,9] #확인할 숫자 값 리스트
+    number = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # 확인할 숫자 값 리스트
 
     # 이동하면서 확인
     # 가로 세로 1부터 9까지 숫자 한번씩
@@ -20,7 +22,7 @@ for test_case in range(1,T+1):
         # arr(i,j) 위치에서
         for j in range(N):
             row_set.add(arr[i][j])
-            col_set.add(arr[i][j]) 
+            col_set.add(arr[i][j])
 
         if len(row_set) != N or len(col_set) != N:  # 길이가 N이 아니면
             answer = 0  # 잘 되어있지 않으면 0 출력
@@ -40,8 +42,8 @@ for test_case in range(1,T+1):
                     for c in range(j, j + 3):
                         box_set.add(arr[r][c])
 
-                if len(box_set) != N:
-                    answer = 0
+                if len(box_set) != N: #길이가 N이 아니다 = 잘 되어있지 않다
+                    answer = 0 #0 출력
         print(f'#{test_case} {answer}')
 
     # 겹치는 숫자가 없으면 1 출력

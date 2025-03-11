@@ -34,8 +34,8 @@ for test_case in range(1, T + 1):
         (3,0), (3,3), (3,6)
         (6,0), (6,3), (6,6)
         '''  # 격자에서 (i,j)의 위치들
-        for i in range(0, N, 3):
-            for j in range(0, N, 3):
+        for i in range(0, N, 3): #3씩 이동
+            for j in range(0, N, 3): #3씩 이동
                 box_set = set()
                 # (r,c): 작은 정사각형 내에서 순회하는 위치
                 for r in range(i, i + 3):

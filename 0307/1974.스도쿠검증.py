@@ -10,6 +10,8 @@ for test_case in range(1,T+1):
     N = len(arr)
     print(N)
 
+    number = [1,2,3,4,5,6,7,8,9] #확인할 숫자 값 리스트
+
     #이동하면서 확인
     for i in range(1, 10) :
     #가로 세로 1부터 9까지 숫자 한번씩

@@ -44,7 +44,7 @@ for test_case in range(1, T + 1):
 
                 if len(box_set) != N: #길이가 N이 아니다 = 잘 되어있지 않다
                     answer = 0 #0 출력
-        print(f'#{test_case} {answer}')
+    print(f'#{test_case} {answer}')
 
     # 겹치는 숫자가 없으면 1 출력
     # 아니면 0 출력

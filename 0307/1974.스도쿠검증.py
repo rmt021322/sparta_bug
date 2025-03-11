@@ -10,7 +10,7 @@ for test_case in range(1,T+1):
     N = len(arr)
     print(N)
 
-    number = [1,2,3,4,5,6,7,8,9] #확인할 숫자 값 리스트
+    #number = [1,2,3,4,5,6,7,8,9] #확인할 숫자 값 리스트
 
     # 이동하면서 확인
     # 가로 세로 1부터 9까지 숫자 한번씩
@@ -18,7 +18,7 @@ for test_case in range(1,T+1):
         row_set = set()  # 가로확인
         col_set = set()  # 세로 확인
         # arr(i,j) 위치에서
-        for j in number:
+        for j in range(N):
             row_set.add(arr[i][j])
             col_set.add(arr[i][j]) 
 

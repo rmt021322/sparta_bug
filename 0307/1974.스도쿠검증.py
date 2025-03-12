@@ -2,12 +2,14 @@ import sys
 
 sys.stdin = open("input.txt", "r")
 
+
 T = int(input())  # 테스트케이스
 
 for test_case in range(1, T + 1):
-    arr = [list(map(int, input().split())) for i in range(9)]
-    # print(arr)
     N = 9
+    arr = [list(map(int, input().split())) for _ in range(N)]
+    # print(arr)
+    
     # print(N)
 
     answer = 1  # 기본적으로 겹치는 숫자가 없다고 생각
@@ -22,7 +24,7 @@ for test_case in range(1, T + 1):
         # arr(i,j) 위치에서
         for j in range(N):
             row_set.add(arr[i][j])
-            col_set.add(arr[i][j])
+            col_set.add(arr[j][i])
 
         if len(row_set) != N or len(col_set) != N:  # 길이가 N이 아니면
             answer = 0  # 잘 되어있지 않으면 0 출력
@@ -48,7 +50,6 @@ for test_case in range(1, T + 1):
 
     # 겹치는 숫자가 없으면 1 출력
     # 아니면 0 출력
-
 
 '''
 내꺼만들기

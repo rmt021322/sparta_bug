@@ -1,6 +1,6 @@
-import sys
+#import sys
 
-sys.stdin = open("input.txt", "r")
+#sys.stdin = open("input_sudoku.txt", "r")
 
 
 T = int(input())  # 테스트케이스

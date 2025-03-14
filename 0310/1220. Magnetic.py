@@ -28,6 +28,7 @@ for test_case in range(1, T + 1):
     #1 = N극 자성체
     #2 = S극 자성체
     #테이블 윗부분이 N극 아래 S극
+    '''
     #행우선 교착상태 찾기_행값 고정 열값 이동
     for i in range(N):
         for j in range(N-1):
@@ -35,12 +36,19 @@ for test_case in range(1, T + 1):
                 count += 1
             elif arr[i][j] ==2 and arr[i][j+1] ==1 : #현재값이 s극이고 다음값이 n극
                 count += 1
-    #열우선 교착상태 찾기
-    for j in range(N):
-        for i in range(N-1):
-            if arr[i][j] == 1 and arr[i+1][j] == 2 : #현재값이 n극이고 다음값이 s극
-                count += 1
-            elif arr[j][i] == 2 and arr[i+1][j] ==1 :#현재값이 s극이고 다음값이 n극
-                count += 1
+    '''
 
-    print(f'#{test_case} {count}') # #1 396 #2 401 ...
+    #자성체는 열을 기준으로 떨어짐
+    # => 각 열에 대한 교착 상태를 체크
+    for col in range(N):
+        prev = 0  # 이전 자성체 (초기값: 0으로 설정)
+        for row in range(N):
+            if (arr[row][col]) == 1:  # N극 자성체를 만나면
+                prev = 1 
+            elif (arr[row][col]) == 2 and prev == 1:  # S극을 만났는데 이전에 N극도 만났으면 교착
+                count += 1 #교착상태 발생 -> 교착 개수 증가
+                prev = 0  # 다음 교착상태 체크를 위한 상태 초기화
+
+
+    print(f"#{test_case} {count}")
+   

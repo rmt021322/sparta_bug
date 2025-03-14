@@ -52,7 +52,7 @@
          
 4615.재미있는 오셀로 게임 :
 
-1220. Magnetic :
+1220. Magnetic : 0313 22:07 ~
         
 
 </details>
@@ -85,5 +85,13 @@
 0313
 </summary>
 4014. 모의sw역량테스트 활주로건설 :
+
+</details>
+
+<details>
+<summary>
+0314
+</summary>
+1860. 진기의 최고급 붕어빵 :
 
 </details>

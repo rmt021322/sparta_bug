@@ -3,6 +3,8 @@
 
 출제 날짜
 (문제 번호 : 풀이 시간)
+
+[SWEA]
 <details>
 <summary>
 0305
@@ -93,5 +95,17 @@
 0314
 </summary>
 1860. 진기의 최고급 붕어빵 :
+
+</details>
+
+[백준]
+<details>
+<summary>
+0317
+</summary>
+8393. 합
+
+10818. 최소, 최대
+
 
 </details>

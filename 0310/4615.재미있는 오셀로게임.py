@@ -1,3 +1,24 @@
+# 0317 1220
+import sys
+
+sys.stdin = open("sample_input.txt", "r")
+
+T = int(input())
+N, M = map(int, input().split())  # 길이 n 횟수 m
+# 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
+for test_case in range(1, T + 1):
+
+    for i in range(M):
+        arr = [[0] * N for _ in range(N)]  # 바둑배열
+        r, c, stone = map(int, input().split())  # (r,c) 위치에  stone놓기
+        # 돌을 놓을 수 없는 곳은 주어지지 않는다
+        for a in range(N):
+            for b in range(N):
+                arr[r][c] = stone  # arr(r,c) 위치에  stone놓기
+    #
+    print(f'#{test_case} {black} {white}')
+
+'''
 def change_color(arr, N, row, col, color)  #배열, 길이, 행, 열, 색):
     #가로, 세로, 대각선으로 놓을 돌과 놓인돌 사이
     #우하좌상 + 대각선 5시 7시 9시 1시
@@ -58,4 +79,4 @@ for test_case in range(1, T + 1):
     return blackstone, whitestone
     #print(f'#{test_case} {blackstone} {whitestone}')
         
-
+'''

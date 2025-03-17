@@ -23,4 +23,3 @@ for i in range(N):
 
 print(f'{min_arr} {max_arr}')
 
-print(f'#{min_arr} {max_arr}')

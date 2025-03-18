@@ -15,8 +15,8 @@ for h in range(N): #stick 리스트에 높이 저장: N이 5일 때 인덱스 01
 
     # print(stick)
 
-for i in range(N-1, -1, -1): #리스트 뒤집기 :N-1부터 0번인덱스까지 역순으로
-    if stick[i] > highest: #i번째 stick값이 최댓값보다 크면
+for i in range(N-1, -1, -1): #리스트 뒤집기 :N-1번 인덱스 부터 0번인덱스까지 역순으로 감소
+    if stick[i] > highest: #i값을 인덱스로 설정 / i번째 stick값이 최댓값보다 크면
         count += 1 #수량 증가하고
         highest = stick[i] #값도 저장
 

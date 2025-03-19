@@ -78,7 +78,7 @@ while len(new_arr) == 1:
             # b를 인덱스값으로 인식하고 계산하기
             # 어떻게???
             new_arr += arr[a]  # 이렇게?
-            #IndexError: list index out of range
+            
 
     # 위 과정을 반복해 숫자가 1개 남으면 중단
     # => 새 리스트 길이가 1이면 출력
